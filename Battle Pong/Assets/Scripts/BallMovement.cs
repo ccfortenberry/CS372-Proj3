@@ -34,11 +34,14 @@ public class BallMovement : MonoBehaviour {
 			rb.velocity = rb.velocity * 1.0005f;
 		}
 	}
+
 	void OnTriggerEnter (Collider c) {
 		timeSinceHit = 0;
 		if(c.gameObject.tag == "Goal")
 		{
-			ScoreKeeping ();
+			if (lastHitBy != null && lastHitBy.transform.name [6] != c.gameObject.transform.name [5]) {
+				ScoreKeeping ();
+			}
 			for (int i=1; i < 9; i++) {
 				if (c.gameObject.name == "GoalP"+i)  {
 					Destroy (gameObject);

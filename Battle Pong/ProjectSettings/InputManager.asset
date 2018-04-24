@@ -294,7 +294,7 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: PlayerTwoStrafe
+    m_Name: Player2Strafe
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: a
@@ -310,7 +310,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerFourStrafe
+    m_Name: Player4Strafe
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: b
@@ -326,7 +326,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerFiveStrafe
+    m_Name: Player5Strafe
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: i
@@ -342,7 +342,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerThreeStrafe
+    m_Name: Player3Strafe
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: z
@@ -358,7 +358,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerSixStrafe
+    m_Name: Player6Strafe
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: e
@@ -374,7 +374,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerOneStrafe
+    m_Name: Player1Strafe
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: left
@@ -390,7 +390,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerOneStrafe-Controller
+    m_Name: Player1Strafe-Controller
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -406,7 +406,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerTwoStrafe-Controller
+    m_Name: Player2Strafe-Controller
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -422,7 +422,7 @@ InputManager:
     axis: 0
     joyNum: 2
   - serializedVersion: 3
-    m_Name: PlayerOnePush
+    m_Name: Player1Push
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -438,7 +438,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerFivePush
+    m_Name: Player5Push
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -454,7 +454,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerTwoPush
+    m_Name: Player2Push
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -470,7 +470,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerThreePush
+    m_Name: Player3Push
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -486,7 +486,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerFourPush
+    m_Name: Player4Push
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -502,7 +502,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerSixPush
+    m_Name: Player6Push
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -518,7 +518,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerOneGrav
+    m_Name: Player1Grav
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -534,7 +534,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerTwoGrav
+    m_Name: Player2Grav
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -550,7 +550,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerThreeGrav
+    m_Name: Player3Grav
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -566,7 +566,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerFourGrav
+    m_Name: Player4Grav
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -582,7 +582,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerFiveGrav
+    m_Name: Player5Grav
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -598,7 +598,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: PlayerSixGrav
+    m_Name: Player6Grav
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 

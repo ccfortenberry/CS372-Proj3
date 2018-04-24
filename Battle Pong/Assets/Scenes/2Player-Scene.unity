@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 306992955}
   - component: {fileID: 306992954}
   m_Layer: 0
-  m_Name: GoalP2
+  m_Name: GoalP1
   m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -317,7 +317,7 @@ Transform:
   m_LocalScale: {x: 30, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1174635941}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &306992954
 BoxCollider:
@@ -1297,7 +1297,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1090683599089216, guid: e7db703b0034f45f9ac68aa570095759, type: 2}
       propertyPath: m_Name
-      value: PlayerTwo
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 114150814472843978, guid: e7db703b0034f45f9ac68aa570095759,
         type: 2}
@@ -1440,8 +1440,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1220081232}
   - {fileID: 306992953}
+  - {fileID: 1220081232}
   - {fileID: 1422485321}
   - {fileID: 284615570}
   m_Father: {fileID: 0}
@@ -1459,7 +1459,7 @@ GameObject:
   - component: {fileID: 1220081234}
   - component: {fileID: 1220081233}
   m_Layer: 0
-  m_Name: GoalP1
+  m_Name: GoalP2
   m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1476,7 +1476,7 @@ Transform:
   m_LocalScale: {x: 30, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1174635941}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1220081233
 BoxCollider:
@@ -2356,7 +2356,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1090683599089216, guid: e7db703b0034f45f9ac68aa570095759, type: 2}
       propertyPath: m_Name
-      value: PlayerOne
+      value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 114150814472843978, guid: e7db703b0034f45f9ac68aa570095759,
         type: 2}
