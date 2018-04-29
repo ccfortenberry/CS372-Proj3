@@ -11,7 +11,6 @@ public class BallMovement : MonoBehaviour {
 	public float speed = 10f;
 	float timeSinceHit;
 	private Vector3 movement;
-	public float maxVelocity;
 
 
 	// Use this for initialization
@@ -27,33 +26,31 @@ public class BallMovement : MonoBehaviour {
 		rb.velocity = movement.normalized * speed;
 
 	}
-
-	void FixedUpdate()
-	{
-		if(Time.time - timeSinceHit > 6)
+	void Update() {
+		if(Time.time - timeSinceHit > 7) //in case ball gets stuck in the middle
 		{
-			rb.velocity = rb.velocity * 1.0005f;
+			rb.velocity = rb.velocity * 1.001f;
 		}
-		if (rb.velocity.magnitude > maxVelocity) {
-			Debug.Log(rb.velocity.ToString());
+	}
+	
+	void OnTriggerEnter (Collider c) {
+		timeSinceHit = 0;
+		if(c.gameObject.tag == "Goal"){
+			if (lastHitBy != null) {
+				if(c.gameObject.name != GameInfo.goalMap[lastHitBy.name])
+				ScoreKeeping ();
+			}
+			Destroy (gameObject);
+		} 
+		else if (c.gameObject.tag == "GravField"){
+			movement = rb.velocity;
+			rb.velocity = rb.velocity * 0.2f;
 		}
 	}
 
-	void OnTriggerEnter (Collider c) {
-		timeSinceHit = 0;
-		if(c.gameObject.tag == "Goal")
-		{
-			if (lastHitBy != null && lastHitBy.transform.name [6] != c.gameObject.transform.name [5]) {
-				ScoreKeeping ();
-			}
-			for (int i=1; i < 9; i++) {
-				if (c.gameObject.name == "GoalP"+i)  {
-					Destroy (gameObject);
-				}
-			}
-		} else if (c.gameObject.tag == "GravField")
-		{
-			rb.velocity = rb.velocity * 0.1f;
+	void OnTriggerExit(Collider c) {
+		if(c.gameObject.tag == "GravField") {
+			rb.velocity = movement;
 		}
 	}
 
@@ -67,6 +64,7 @@ public class BallMovement : MonoBehaviour {
 			GetComponent<ParticleSystem>().startColor = lastHitBy.GetComponent<Renderer> ().sharedMaterial.GetColor("_Color");
 			GetComponent<ParticleSystem>().Play();
 			timeSinceHit = Time.time;
+			movement = rb.velocity;
 		}
 
 	}
@@ -79,17 +77,15 @@ public class BallMovement : MonoBehaviour {
 
 
 	void ScoreKeeping() {
-		if (lastHitBy != null) {
-			PlayerMovement scoringPlayer = (PlayerMovement) lastHitBy.GetComponent(typeof(PlayerMovement));
-			scoringPlayer.setScore (scoringPlayer.getScore () + 1);
-			if (scoringPlayer.getScore () <= 10 ) {
-				scoringPlayer.playSound (0);
-			} else if (scoringPlayer.getScore () == 11)
-				scoringPlayer.playSound (1);
-			Debug.Log(scoringPlayer.gameObject.name + " scored!");
-		} 
-	}
-		
+		PlayerMovement scoringPlayer = (PlayerMovement) lastHitBy.GetComponent(typeof(PlayerMovement));
+		scoringPlayer.setScore (scoringPlayer.getScore () + 1);
+		if (scoringPlayer.getScore () <= 10 ) {
+			scoringPlayer.playSound (0,1);
+		} else if (scoringPlayer.getScore () == 11)
+			scoringPlayer.playSound (1,1);
+		Debug.Log(scoringPlayer.gameObject.name + " scored!");
+		lastHitBy = null;
+	}	
 
 	GameObject getLastHitBy() {
 		return lastHitBy;
