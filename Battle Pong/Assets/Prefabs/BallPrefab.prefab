@@ -334,6 +334,7 @@ MonoBehaviour:
   audioClip:
   - {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
   speed: 25
+  maxVelocity: 70
 --- !u!135 &135636595589831228
 SphereCollider:
   m_ObjectHideFlags: 1

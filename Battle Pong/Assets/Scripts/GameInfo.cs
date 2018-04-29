@@ -10,7 +10,8 @@ public class GameInfo {
 	{
 		{"PlayerOne", "PlayerOne"},
 		{"PlayerTwo", "PlayerTwo"},
-		{"PlayerThree", "PlayerFour"},
+		{"PlayerThree", "PlayerThree"},
+		{"PlayerFour", "PlayerFour"},
 		{"PlayerFive", "PlayerFive"},
 		{"PlayerSix", "PlayerSix"},
 		{"PlayerSeven", "PlayerSeven"},

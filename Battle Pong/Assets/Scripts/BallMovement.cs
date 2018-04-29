@@ -11,6 +11,7 @@ public class BallMovement : MonoBehaviour {
 	public float speed = 10f;
 	float timeSinceHit;
 	private Vector3 movement;
+	public float maxVelocity;
 
 
 	// Use this for initialization
@@ -32,6 +33,9 @@ public class BallMovement : MonoBehaviour {
 		if(Time.time - timeSinceHit > 6)
 		{
 			rb.velocity = rb.velocity * 1.0005f;
+		}
+		if (rb.velocity.magnitude > maxVelocity) {
+			Debug.Log(rb.velocity.ToString());
 		}
 	}
 
